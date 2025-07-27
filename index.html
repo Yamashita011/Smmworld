@@ -579,4 +579,61 @@
             
             if (isFollowerService && target.length < 2) {
                 document.getElementById('target-error').textContent = 'Username inválido';
-                re
+                return false;
+            }
+            
+            if (!isFollowerService) {
+                if (!target.includes('instagram.com')) {
+                    document.getElementById('target-error').textContent = 'Link do Instagram inválido';
+                    return false;
+                }
+                
+                if (selectedService === 'views-reels' && !target.includes('/reel/')) {
+                    document.getElementById('target-error').textContent = 'Link deve ser de um Reels (/reel/)';
+                    return false;
+                }
+                
+                if (selectedService !== 'views-reels' && !target.includes('/p/')) {
+                    document.getElementById('target-error').textContent = 'Link deve ser de um post (/p/)';
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+
+        function setupSummary() {
+            document.getElementById('summary-service').textContent = serviceName;
+            document.getElementById('summary-quantity').textContent = quantity.toLocaleString('pt-BR');
+            
+            const targetLabel = document.getElementById('summary-target-label');
+            targetLabel.textContent = isFollowerService ? 'Perfil:' : 'Link:';
+            
+            document.getElementById('summary-target').textContent = target;
+            
+            const total = (quantity / 1000) * servicePrice;
+            document.getElementById('summary-total').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+        }
+
+        function sendToWhatsApp() {
+            const total = (quantity / 1000) * servicePrice;
+            const totalFormatted = `R$ ${total.toFixed(2).replace('.', ',')}`;
+            
+            const message = `🚀 *Pedido via Social Boost*
+
+📋 *Detalhes do pedido:*
+• Serviço: ${serviceName}
+• Quantidade: ${quantity.toLocaleString('pt-BR')}
+• ${isFollowerService ? 'Perfil' : 'Link'}: ${target}
+• Valor: ${totalFormatted}
+
+Gostaria de prosseguir com este pedido!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
