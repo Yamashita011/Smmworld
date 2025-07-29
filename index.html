@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Seguidores Instagram | Curtidas e Views - Social Boost</title>
+    <meta name="description" content="Compre seguidores brasileiros e mundiais para Instagram, curtidas e views em reels. Entrega rápida, preços baixos e qualidade garantida. Acelere seu crescimento!">
+    <meta name="keywords" content="comprar seguidores instagram, seguidores brasileiros, curtidas instagram, views reels, serviços instagram brasil">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Social Boost">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://socialboost.com.br/">
+    <meta property="og:title" content="Comprar Seguidores Instagram - Social Boost">
+    <meta property="og:description" content="Seguidores brasileiros e mundiais, curtidas e views em reels. Entrega rápida e preços baixos!">
+    <meta property="og:image" content="https://socialboost.com.br/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://socialboost.com.br/">
+    <meta property="twitter:title" content="Comprar Seguidores Instagram - Social Boost">
+    <meta property="twitter:description" content="Seguidores brasileiros e mundiais, curtidas e views em reels. Entrega rápida e preços baixos!">
+    <meta property="twitter:image" content="https://socialboost.com.br/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="canonical" href="https://socialboost.com.br/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+            }
+            
+            .whatsapp-float svg {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transform: translateY(0);
+            transition: all 0.3s ease;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .step {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .step-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .service-grid {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .service-btn {
+            background: white;
+            border: 3px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-btn:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .service-btn.selected {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+
+        .service-emoji {
+            font-size: 2.5em;
+        }
+
+        .service-info h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .service-price {
+            color: #667eea;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .quantity-display {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .total-price {
+            font-size: 2em;
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        .profile-preview {
+            background: #f8f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .profile-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .summary-item {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 18px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .error {
+            color: #e74c3c;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .step-indicator {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        .step-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .step-dot.active {
+            background: #667eea;
+            transform: scale(1.2);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .card {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .service-btn {
+                padding: 15px;
+            }
+            
+            .service-emoji {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>🚀 Social Boost - Comprar Seguidores Instagram</h1>
+                <p>Seguidores brasileiros, curtidas e views com entrega rápida</p>
+            </div>
+
+            <div class="step-indicator">
+                <div class="step-dot active" data-step="1"></div>
+                <div class="step-dot" data-step="2"></div>
+                <div class="step-dot" data-step="3"></div>
+                <div class="step-dot" data-step="4"></div>
+            </div>
+
+            <!-- Etapa 1: Escolha do Serviço -->
+            <div class="step active" id="step1">
+                <h2 class="step-title">O que você deseja comprar?</h2>
+                <div class="service-grid">
+                    <div class="service-btn" data-service="seguidores-br" data-price="10">
+                        <div class="service-emoji">🇧🇷</div>
+                        <div class="service-info">
+                            <h3>Seguidores Brasileiros Instagram</h3>
+                            <div class="service-price">R$ 10/1000 seguidores</div>
+                        </div>
+                    </div>
+                    <div class="service-btn" data-service="seguidores-mundial" data-price="5">
+                        <div class="service-emoji">🌍</div>
+                        <div class="service-info">
+                            <h3>Seguidores Mundiais Instagram</h3>
+                            <div class="service-price">R$ 5/1000 seguidores</div>
+                        </div>
+                    </div>
+                    <div class="service-btn" data-service="curtidas-br" data-price="8">
+                        <div class="service-emoji">❤️</div>
+                        <div class="service-info">
+                            <h3>Curtidas Brasileiras Instagram</h3>
+                            <div class="service-price">R$ 8/1000 curtidas</div>
+                        </div>
+                    </div>
+                    <div class="service-btn" data-service="curtidas-mundial" data-price="4">
+                        <div class="service-emoji">💙</div>
+                        <div class="service-info">
+                            <h3>Curtidas Mundiais Instagram</h3>
+                            <div class="service-price">R$ 4/1000 curtidas</div>
+                        </div>
+                    </div>
+                    <div class="service-btn" data-service="views-reels" data-price="3">
+                        <div class="service-emoji">🎥</div>
+                        <div class="service-info">
+                            <h3>Views em Reels Instagram</h3>
+                            <div class="service-price">R$ 3/1000 views</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Etapa 2: Quantidade -->
+            <div class="step" id="step2">
+                <h2 class="step-title">Quantos você quer?</h2>
+                <div class="form-group">
+                    <label for="quantity">Quantidade (mínimo 1000):</label>
+                    <input type="number" id="quantity" min="1000" step="100" value="1000">
+                    <div class="error" id="quantity-error"></div>
+                </div>
+                <div class="quantity-display">
+                    <div>Valor total:</div>
+                    <div class="total-price" id="total-price">R$ 0,00</div>
+                </div>
+                <button class="btn btn-primary" onclick="goToStep(3)">Continuar</button>
+                <button class="btn btn-secondary" onclick="goToStep(1)">Voltar</button>
+            </div>
+
+            <!-- Etapa 3: Dados do pedido -->
+            <div class="step" id="step3">
+                <h2 class="step-title">Dados do seu pedido</h2>
+                <div class="form-group">
+                    <label for="target" id="target-label">Username do Instagram:</label>
+                    <input type="text" id="target" placeholder="@seuusername">
+                    <div class="error" id="target-error"></div>
+                </div>
+                <div class="profile-preview" id="preview" style="display: none;">
+                    <div class="profile-avatar" id="avatar">?</div>
+                    <div>
+                        <div><strong id="preview-name">Carregando...</strong></div>
+                        <div id="preview-target">@username</div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="goToStep(4)">Continuar</button>
+                <button class="btn btn-secondary" onclick="goToStep(2)">Voltar</button>
+            </div>
+
+            <!-- Etapa 4: Resumo -->
+            <div class="step" id="step4">
+                <h2 class="step-title">Confirme seu pedido</h2>
+                
+                <div class="summary-item">
+                    <span>Serviço:</span>
+                    <span id="summary-service">-</span>
+                </div>
+                <div class="summary-item">
+                    <span>Quantidade:</span>
+                    <span id="summary-quantity">-</span>
+                </div>
+                <div class="summary-item">
+                    <span id="summary-target-label">Perfil:</span>
+                    <span id="summary-target">-</span>
+                </div>
+                <div class="summary-item">
+                    <span><strong>Valor total:</strong></span>
+                    <span><strong id="summary-total">-</strong></span>
+                </div>
+                <button class="btn btn-primary" onclick="sendToWhatsApp()">📱 Enviar pedido via WhatsApp</button>
+                <button class="btn btn-secondary" onclick="goToStep(3)">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="#" onclick="openWhatsAppSupport()" class="whatsapp-float" title="Dúvidas? Fale conosco!">
+        <svg viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"/>
+        </svg>
+    </a>
+
+    <script>
+        let currentStep = 1;
+        let selectedService = null;
+        let servicePrice = 0;
+        let serviceName = '';
+        let quantity = 1000;
+        let target = '';
+        let isFollowerService = true;
+
+        // Configuração do WhatsApp (substitua pelo seu número)
+        const WHATSAPP_NUMBER = '5511999999999'; // Formato: 55 + DDD + número
+
+        const services = {
+            'seguidores-br': { name: 'Seguidores Brasileiros Instagram', price: 10, isFollower: true },
+            'seguidores-mundial': { name: 'Seguidores Mundiais Instagram', price: 5, isFollower: true },
+            'curtidas-br': { name: 'Curtidas Brasileiras Instagram', price: 8, isFollower: false },
+            'curtidas-mundial': { name: 'Curtidas Mundiais Instagram', price: 4, isFollower: false },
+            'views-reels': { name: 'Views em Reels Instagram', price: 3, isFollower: false }
+        };
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Service selection
+            document.querySelectorAll('.service-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.service-btn').forEach(b => b.classList.remove('selected'));
+                    this.classList.add('selected');
+                    
+                    selectedService = this.dataset.service;
+                    servicePrice = parseInt(this.dataset.price);
+                    serviceName = services[selectedService].name;
+                    isFollowerService = services[selectedService].isFollower;
+                    
+                    setTimeout(() => goToStep(2), 300);
+                });
+            });
+
+            // Quantity input
+            document.getElementById('quantity').addEventListener('input', function() {
+                const value = parseInt(this.value);
+                if (isNaN(value) || value < 1000) {
+                    quantity = 1000;
+                } else {
+                    quantity = value;
+                }
+                updateTotalPrice();
+            });
+
+            // Allow clearing the input temporarily
+            document.getElementById('quantity').addEventListener('keydown', function(e) {
+                // Allow backspace, delete, arrow keys, etc.
+                const allowedKeys = ['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab'];
+                if (allowedKeys.includes(e.key) || e.ctrlKey || e.metaKey) {
+                    return;
+                }
+            });
+
+            // Validate on blur (when user leaves the field)
+            document.getElementById('quantity').addEventListener('blur', function() {
+                if (this.value === '' || parseInt(this.value) < 1000) {
+                    this.value = 1000;
+                    quantity = 1000;
+                    updateTotalPrice();
+                }
+            });
+
+            // Target input
+            document.getElementById('target').addEventListener('input', function() {
+                target = this.value.trim();
+                validateAndPreview();
+            });
+        });
+
+        function goToStep(step) {
+            if (step === 2 && !selectedService) return;
+            if (step === 3 && quantity < 1000) return;
+            if (step === 4 && !validateTarget()) return;
+
+            // Update step indicator
+            document.querySelectorAll('.step-dot').forEach(dot => {
+                dot.classList.toggle('active', parseInt(dot.dataset.step) <= step);
+            });
+
+            // Hide current step
+            document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+            
+            // Show target step
+            setTimeout(() => {
+                document.getElementById(`step${step}`).classList.add('active');
+                currentStep = step;
+                
+                if (step === 2) {
+                    updateTotalPrice();
+                } else if (step === 3) {
+                    setupStep3();
+                } else if (step === 4) {
+                    setupSummary();
+                }
+            }, 150);
+        }
+
+        function updateTotalPrice() {
+            const total = (quantity / 1000) * servicePrice;
+            document.getElementById('total-price').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+        }
+
+        function setupStep3() {
+            const targetLabel = document.getElementById('target-label');
+            const targetInput = document.getElementById('target');
+            
+            if (isFollowerService) {
+                targetLabel.textContent = 'Username do Instagram:';
+                targetInput.placeholder = '@seuusername';
+            } else if (selectedService === 'views-reels') {
+                targetLabel.textContent = 'Link do Reels:';
+                targetInput.placeholder = 'https://instagram.com/reel/...';
+            } else {
+                targetLabel.textContent = 'Link da foto/vídeo:';
+                targetInput.placeholder = 'https://instagram.com/p/...';
+            }
+            
+            target = '';
+            targetInput.value = '';
+            document.getElementById('preview').style.display = 'none';
+        }
+
+        function validateAndPreview() {
+            const preview = document.getElementById('preview');
+            const error = document.getElementById('target-error');
+            
+            error.textContent = '';
+            
+            if (!target) {
+                preview.style.display = 'none';
+                return;
+            }
+
+            if (isFollowerService) {
+                // Validate username
+                if (!target.startsWith('@')) {
+                    target = '@' + target.replace('@', '');
+                    document.getElementById('target').value = target;
+                }
+                
+                if (target.length < 2) {
+                    error.textContent = 'Username inválido';
+                    preview.style.display = 'none';
+                    return;
+                }
+                
+                // Show preview
+                document.getElementById('avatar').textContent = target.charAt(1).toUpperCase();
+                document.getElementById('preview-name').textContent = target.replace('@', '').toLowerCase();
+                document.getElementById('preview-target').textContent = target;
+                preview.style.display = 'flex';
+            } else {
+                // Validate URL
+                if (!target.includes('instagram.com')) {
+                    error.textContent = 'Link do Instagram inválido';
+                    preview.style.display = 'none';
+                    return;
+                }
+                
+                // Validate specific service URLs
+                if (selectedService === 'views-reels') {
+                    if (!target.includes('/reel/')) {
+                        error.textContent = 'Link deve ser de um Reels (/reel/)';
+                        preview.style.display = 'none';
+                        return;
+                    }
+                    
+                    // Show preview for reels
+                    document.getElementById('avatar').textContent = '🎥';
+                    document.getElementById('preview-name').textContent = 'Reels do Instagram';
+                    document.getElementById('preview-target').textContent = 'Link do Reels validado ✓';
+                } else {
+                    if (!target.includes('/p/')) {
+                        error.textContent = 'Link deve ser de um post (/p/)';
+                        preview.style.display = 'none';
+                        return;
+                    }
+                    
+                    // Show preview for posts
+                    document.getElementById('avatar').textContent = selectedService.includes('curtidas') ? '❤️' : '📷';
+                    document.getElementById('preview-name').textContent = 'Post do Instagram';
+                    document.getElementById('preview-target').textContent = 'Link validado ✓';
+                }
+                
+                preview.style.display = 'flex';
+            }
+        }
+
+        function validateTarget() {
+            if (!target) {
+                document.getElementById('target-error').textContent = 'Campo obrigatório';
+                return false;
+            }
+            
+            if (isFollowerService && target.length < 2) {
+                document.getElementById('target-error').textContent = 'Username inválido';
+                return false;
+            }
+            
+            if (!isFollowerService) {
+                if (!target.includes('instagram.com')) {
+                    document.getElementById('target-error').textContent = 'Link do Instagram inválido';
+                    return false;
+                }
+                
+                if (selectedService === 'views-reels' && !target.includes('/reel/')) {
+                    document.getElementById('target-error').textContent = 'Link deve ser de um Reels (/reel/)';
+                    return false;
+                }
+                
+                if (selectedService !== 'views-reels' && !target.includes('/p/')) {
+                    document.getElementById('target-error').textContent = 'Link deve ser de um post (/p/)';
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+
+        function setupSummary() {
+            document.getElementById('summary-service').textContent = serviceName;
+            document.getElementById('summary-quantity').textContent = quantity.toLocaleString('pt-BR');
+            
+            const targetLabel = document.getElementById('summary-target-label');
+            targetLabel.textContent = isFollowerService ? 'Perfil:' : 'Link:';
+            
+            document.getElementById('summary-target').textContent = target;
+            
+            const total = (quantity / 1000) * servicePrice;
+            document.getElementById('summary-total').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+        }
+
+        function openWhatsAppSupport() {
+            const supportMessage = `👋 Olá! Tenho uma dúvida sobre os serviços do Social Boost.
+
+Pode me ajudar?`;
+            
+            const encodedMessage = encodeURIComponent(supportMessage);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function sendToWhatsApp() {
+            const total = (quantity / 1000) * servicePrice;
+            const totalFormatted = `R$ ${total.toFixed(2).replace('.', ',')}`;
+            
+            const message = `🚀 *Pedido via Social Boost*
+
+📋 *Detalhes do pedido:*
+• Serviço: ${serviceName}
+• Quantidade: ${quantity.toLocaleString('pt-BR')}
+• ${isFollowerService ? 'Perfil' : 'Link'}: ${target}
+• Valor: ${totalFormatted}
+
+Gostaria de prosseguir com este pedido!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
